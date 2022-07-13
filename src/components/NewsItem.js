@@ -20,6 +20,7 @@ const NewsItemBlock = styled.div`
             }
         }
         p {
+            
             margin : 0;
             line-height : 1.5;
             margin-top : 0.5rem;
