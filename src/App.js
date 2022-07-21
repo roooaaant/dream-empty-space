@@ -2,7 +2,8 @@ import React from 'react';
 //import { Route, Routes } from 'react-router-dom';
 import ColorBox from './components/ColorBox';
 //import NewsPage from './pages/NewsPage';
-import ColorContext from './contexts/color';
+import { ColorProvider } from './contexts/color';
+import SelectColors from './components/SelectColors';
 
 /*
 const App = () => {
@@ -17,11 +18,12 @@ const App = () => {
 
 const App = () => {
   return (
-    <ColorContext.Provider value={{ color:'red' }}>
+    <ColorProvider>
     <div>
-      <ColorBox />
+        <SelectColors />
+        <ColorBox />
     </div>
-    </ColorContext.Provider>
+    </ColorProvider>
   )
 }
 
