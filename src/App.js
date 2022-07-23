@@ -4,6 +4,8 @@ import ColorBox from './components/ColorBox';
 //import NewsPage from './pages/NewsPage';
 import { ColorProvider } from './contexts/color';
 import SelectColors from './components/SelectColors';
+import Counter from './components/Counter'
+import Todos from './components/Todos';
 
 /*
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
 };
 */
 
+/* [15]
 const App = () => {
   return (
     <ColorProvider>
@@ -26,5 +29,18 @@ const App = () => {
     </ColorProvider>
   )
 }
+ */
+
+// 17
+const App = () => {
+  return (
+    <div>
+      <Counter number={0} />
+      <hr/>
+      <Todos />
+    </div>
+  )
+}
+
 
 export default App;
